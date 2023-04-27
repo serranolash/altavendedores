@@ -1,0 +1,49 @@
+{% extends "base.html" %}
+{% block title %}Página de inicio{% endblock %}
+{% block body %}
+
+<!DOCTYPE html>
+<html>
+
+<head>
+  <a href="/" class="btn btn-primary">Volver al ínicio</a>
+  <title>Alta de vendedor</title>
+  <style>
+    .input-field {
+      display: block;
+      margin-bottom: 10px;
+    }
+  </style>
+</head>
+
+<body>
+  <h1>Alta de vendedor</h1>
+  <form method="post">
+
+    <label for="base">Base de alta:</label>
+    <select name="base" id="base" required class="input-field">
+      <option value="DEPOSEVN">DEPOSEVN</option>
+      <option value="DEPOFORT">DEPOFORT</option>
+    </select><br><br>   
+
+    <label for="codigo">Código:</label>
+    <input type="text" name="codigo" id="codigo" required class="input-field"><br><br>
+
+    <label for="nombre">Nombre:</label>
+    <input type="text" name="nombre" id="nombre" required class="input-field"><br><br>
+
+    <label for="nro_documento">Número de documento:</label>
+    <input type="text" name="nro_documento" id="nro_documento" required class="input-field"><br><br>
+
+
+    <input type="submit" value="Enviar">
+  </form>
+  
+  <script>
+    // Aquí puedes añadir cualquier script que necesites
+  </script>
+  
+</body>
+
+</html>
+{% endblock %}

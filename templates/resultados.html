@@ -1,0 +1,25 @@
+<head>
+    <link rel="stylesheet" type="text/css" href="estilos.css">
+  </head>
+  <a href="/" class="btn btn-primary">Volver al ínicio</a>
+  
+  <table class="table" style="border: 1px solid blue;">
+    <thead style="border: 1px solid blue;">
+      <tr style="border: 1px solid blue;">
+        <th style="border: 1px solid blue;"><h1>Codigo</th></h1>
+        <th style="border: 1px solid blue;"><h1>Nombre</th></h1>
+        <th style="border: 1px solid blue;"><h1>Documento</th></h1>
+        
+      </tr>
+    </thead>
+    <tbody style="border: 1px solid blue;">
+      {% for resultado in resultados["Resultados"] %}
+      <tr style="border: 1px solid blue;">
+        <td style="border: 1px solid blue;">{{ resultado.Codigo }}</td>
+        <td style="border: 1px solid blue;">{{ resultado.Nombre }}</td>
+        <td style="border: 1px solid blue;">{{ resultado.NroDocumento }}</td>        
+      </tr>
+      {% endfor %}
+    </tbody>
+  </table>
+ 
